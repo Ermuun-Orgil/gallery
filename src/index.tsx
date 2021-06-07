@@ -2,18 +2,17 @@ import React from 'react';
 import { RootNavigationContainer } from './navigation';
 import { ThemeProvider } from './component/theme-provider';
 import { AuthUserProvider } from '../src/provider/auth';
-// import { ApolloClientProvider } from './graphql';
+import { Text } from 'react-native';
+import { Box } from './component';
 // import { ExamProvider } from './provider/exam-provider';
 
 const App = () => {
   return (
-    // <ApolloClientProvider>
-      <AuthUserProvider>
-        <ThemeProvider>
-          <RootNavigationContainer />
-        </ThemeProvider>
-      </AuthUserProvider>
-    // </ApolloClientProvider>
+    // <AuthUserProvider>
+      <ThemeProvider>
+        <RootNavigationContainer />
+      </ThemeProvider>
+    // </AuthUserProvider>
   );
 };
 

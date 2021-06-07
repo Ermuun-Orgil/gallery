@@ -18,6 +18,7 @@ export const Button: React.FC<ButtonType> = ({
   category = 'fill',
   width,
   children,
+  height,
 }) => {
   return (
     <Box
@@ -32,15 +33,15 @@ export const Button: React.FC<ButtonType> = ({
       >
         <Border
           radius={4}
-          role={type === 'primary' ? 'primary500' : 'destructive500'}
+          role={type === 'primary' ? 'primary100' : 'secondary'}
           lineWidth={category === 'ghost' ? 1 : 0}
         >
           <Box
             role={
               category === 'fill'
                 ? type === 'primary'
-                  ? 'primary500'
-                  : 'destructive500'
+                  ? 'primary100'
+                  : 'secondary'
                 : undefined
             }
             height={'100%'}
@@ -58,8 +59,8 @@ export const Button: React.FC<ButtonType> = ({
                 role={
                   category === 'fill'
                     ? type === 'primary'
-                      ? 'primary500'
-                      : 'destructive500'
+                      ? 'primary100'
+                      : 'secondary'
                     : undefined
                 }
                 justifyContent={'center'}
